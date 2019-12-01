@@ -1,0 +1,37 @@
+    //Start page tut.by
+
+    CSS_SEARCH_INPUT = "#search_from_str"
+    CSS_FIND_BUTTON = ".button.big"
+    CSS_REMEMBER_ME_LABEL = "label[for='memory']"
+    CSS_REMEMBER_ME_INPUT = "#memory"
+    CSS_REGISTER_BUTTON = ".auth__reg"
+
+    XPATH_SEARCH_INPUT = "//input[@id='search_from_str']"
+    XPATH_FIND_BUTTON = "//input[contains(@class,'big')]"
+    XPATH_REMEMBER_ME_LABEL = "//label[contains(@for,'memory')]"
+    XPATH_REMEMBER_ME_INPUT = "//input[@id='memory']"
+    XPATH_REGISTER_BUTTON = "//a[contains(@class,'auth__reg')]"
+
+    //Start page. Light version
+
+    CSS_WRITE_EMAIL_BUTTON = "a[aria-label='Написать']"
+    CSS_LOGOUT_LINK = ".b-header__link_exit"
+    CSS_SETTINGS_LINK = ".b-header__link_setup"
+    CSS_1_LOCATOR = ".b-folders__folder__link"
+
+    XPATH_WRITE_EMAIL_BUTTON = "//a[@aria-label='Написать']"
+    XPATH_LOGOUT_LINK = "//a[contains(@class,'b-header__link_exit')]"
+    XPATH_SETTINGS_LINK = "//a[contains(@class,'b-header__link_setup')]"
+    XPATH_1_LOCATOR = "//a[@class='b-folders__folder__link']"
+
+    //New email page
+
+    CSS_TO_INPUT_NEW_EMAIL = "input[name='to']"
+    CSS_TOPIC_INPUT_NEW_EMAIL = "input[name='subj']"
+    CSS_FIND_BUTTON_NEW_EMAIL = ".r input"
+
+    XPATH_TO_INPUT_NEW_EMAIL = "//input[@name='to']"
+    XPATH_TOPIC_INPUT_NEW_EMAIL = "//input[@name='subj']"
+    XPATH_FIND_BUTTON_NEW_EMAIL = "//input[@name='search']"
+
+
