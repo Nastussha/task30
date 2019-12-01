@@ -17,21 +17,21 @@
     CSS_WRITE_EMAIL_BUTTON = "a[aria-label='Написать']"
     CSS_LOGOUT_LINK = ".b-header__link_exit"
     CSS_SETTINGS_LINK = ".b-header__link_setup"
-    CSS_1_LOCATOR = ".b-folders__folder__name"
+    CSS_1_LOCATOR = ".b-folders__folder__link"
 
     XPATH_WRITE_EMAIL_BUTTON = "//a[@aria-label='Написать']"
     XPATH_LOGOUT_LINK = "//a[contains(@class,'b-header__link_exit')]"
     XPATH_SETTINGS_LINK = "//a[contains(@class,'b-header__link_setup')]"
-    XPATH_1_LOCATOR = "//a/ancestor::span[@class='b-folders__folder__name']"
+    XPATH_1_LOCATOR = "//a[@class='b-folders__folder__link']"
 
     //New email page
 
-    CSS_TO_INPUT_NEW_EMAIL = "#id1169354079908"
-    CSS_TOPIC_INPUT_NEW_EMAIL = "#id1169354079892"
+    CSS_TO_INPUT_NEW_EMAIL = "input[name='to']"
+    CSS_TOPIC_INPUT_NEW_EMAIL = "input[name='subj']"
     CSS_FIND_BUTTON_NEW_EMAIL = ".r input"
 
-    XPATH_TO_INPUT_NEW_EMAIL = "//input[@id='id1169354079908']"
-    XPATH_TOPIC_INPUT_NEW_EMAIL = "//input[@id='id1169354079892']"
+    XPATH_TO_INPUT_NEW_EMAIL = "//input[@name='to']"
+    XPATH_TOPIC_INPUT_NEW_EMAIL = "//input[@name='subj']"
     XPATH_FIND_BUTTON_NEW_EMAIL = "//input[@name='search']"
 
 

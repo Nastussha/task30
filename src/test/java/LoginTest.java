@@ -19,36 +19,31 @@ public class LoginTest {
     private WebDriver driver;
 
     @BeforeEach
-    public void openBrowser(){
+    public void openBrowser() {
         driver = new FirefoxDriver();
         driver.get(URL);
     }
 
     @AfterEach
-    public void closeBrowser(){
+    public void closeBrowser() {
         driver.close();
     }
 
     @Test
-    public void loginTest(){
-
+    public void loginTest() {
         driver.findElement(LOGIN_LINK).click();
         driver.findElement(LOGIN).sendKeys("seleniumtests@tut.by");
         driver.findElement(PASSWORD).sendKeys("123456789zxcvbn");
         driver.findElement(LOGIN_BUTTON).click();
-        Assertions.assertTrue(IsTestElementPresent(driver, LOGGED_IN_RESULT));
+        Assertions.assertTrue(isTestElementPresent(LOGGED_IN_RESULT), "Login failed");
 
     }
 
-    public boolean IsTestElementPresent(WebDriver driver, By by)
-    {
-        try
-        {
+    public boolean isTestElementPresent(By by) {
+        try {
             driver.findElement(by);
             return true;
-        }
-        catch (NoSuchElementException e)
-        {
+        } catch (NoSuchElementException e) {
             return false;
         }
     }
